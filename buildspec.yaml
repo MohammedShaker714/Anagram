@@ -9,8 +9,7 @@ phases:
       - docker login --username adilforms --password $docker-password
   build:
     commands:
-      - docker build -t anagram-final:latest .
-      - docker tag anagram-final:latest 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:latest
+      - docker build -t adilforms/anagram-final:latest .
   post_build:
     commands:
-      - docker push 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:latest
+      - docker push adilforms/anagram-final:tagname

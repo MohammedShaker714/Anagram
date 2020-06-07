@@ -13,4 +13,4 @@ phases:
       - docker tag anagram-final:latest 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:latest
   post_build:
     commands:
-      - docker push 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:anagram-test-1
+      - docker push 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:latest

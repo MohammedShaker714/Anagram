@@ -11,7 +11,7 @@ phases:
     commands:
       - ls -al
       - docker version
-      - docker image build -t https://hub.docker.com/repository/docker/adilforms/anagram-final .
+      - docker image build -t https://hub.docker.com/repository/docker/adilforms/anagram-final:latest .
   post_build:
     commands:
       - docker push adilforms/anagram-final:latest

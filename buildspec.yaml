@@ -6,3 +6,11 @@ phases:
   pre_build:
     commands:
       - pip install -r requirements.txt
+      - $(aws ecr get-login --no-include-email --region us-east-1)
+  build:
+    commands:
+      - docker build -t anagram-final:anagram-test-1
+      - docker tag anagram-final:anagram-test 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:anagram-test-1
+  post-build:
+    commands:
+      - docker push 735598925607.dkr.ecr.us-east-1.amazonaws.com/anagram-final:anagram-test-1

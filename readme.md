@@ -32,4 +32,5 @@ In one terminal, `> python backend/application.py`. In another terminal, `> cd f
 
 ## Frontend
 I initially built the frontend with `> create-react-app frontend`, but with the source code and `package.json` you can just `> npm install`.
+# this changes was done.
 

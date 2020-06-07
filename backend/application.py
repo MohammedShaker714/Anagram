@@ -6,7 +6,7 @@ from anagrams import AnagramFinder
 
 app = Flask(__name__)
 api = Api(app)
-cors = CORS(app, resources={r"/anagram": {"origins": "http://localhost:80"}})
+cors = CORS(app, resources={r"/anagram": {"origins": "http://54.164.120.46:80"}})
 
 
 class AnagramAPI(Resource):

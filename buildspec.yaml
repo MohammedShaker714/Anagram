@@ -9,7 +9,8 @@ phases:
       - docker login --username adilforms --password $PASSWORD
   build:
     commands:
-      - docker build -tag anagram-final:latest .
+      - ls -al
+      - docker image build -tag adilforms/anagram-final:latest .
   post_build:
     commands:
       - docker push adilforms/anagram-final:latest

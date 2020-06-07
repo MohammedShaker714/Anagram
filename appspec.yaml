@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: ./backend/application.py
-    destination: /var/www/sample-app
+    destination: 
   - source: /
     destination: /home/ec2-user/sample-app
 hooks:

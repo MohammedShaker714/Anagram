@@ -14,7 +14,6 @@ Python 3.6.6 (> 2.7 ?), pip, virtualenv, npm 6.8.  Flask, flask-restful, flask-c
 ## Installation
 Create a python virtual environment:
 
-
 -`> virtualenv venv`
 
 -`> source venv/bin/activate`

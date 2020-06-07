@@ -6,7 +6,7 @@ phases:
   pre_build:
     commands:
       - pip install -r requirements.txt
-      - docker login --username adilforms --password $docker-password
+      - docker login --username adilforms --password $PASSWORD
   build:
     commands:
       - docker build -t adilforms/anagram-final:latest .

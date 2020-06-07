@@ -5,8 +5,3 @@ files:
     destination: 
   - source: /
     destination: /home/ec2-user/sample-app
-hooks:
-  AfterInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root123

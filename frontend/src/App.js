@@ -31,7 +31,7 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Type in some letters to get all anagrams
+          Type in a word to get all anagrams
         </p>
         <div>
           <input value={stem} onChange={updateStem}/>

@@ -6,7 +6,7 @@ phases:
   pre_build:
     commands:
       - pip install -r requirements.txt
-      - docker login --username smohammed714 --password $PASSWORD
+      - docker login --username smohammed714 --password System123*
   build:
     commands:
       - ls -al

@@ -6,13 +6,13 @@ phases:
   pre_build:
     commands:
       - pip install -r requirements.txt
-      - sudo docker login --username smohammed714 --password $PASSWORD
+      - docker login --username adilforms --password $PASSWORD
   build:
     commands:
       - ls -al
       - docker version
-      - docker image build -t anagram-714:latest 
-      - docker tag anagram-714:latest smohammed714/anagram-714:latest
+      - docker image build -t anagram-final:latest .
+      - docker tag anagram-final:latest adilforms/anagram-final:latest
   post_build:
     commands:
-      - docker push smohammed714/anagram-714:latest
+      - docker push adilforms/anagram-final:latest

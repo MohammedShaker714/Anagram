@@ -20,7 +20,7 @@ class AnagramFinder():
     def get_anagrams(self):
         seed = self.seed
 
-        if len(seed) > 10:
+        if len(seed) > 12:
             raise Exception("Input is too long.")
 
         seed_counter = Counter(seed)

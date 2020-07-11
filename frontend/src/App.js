@@ -15,7 +15,7 @@ const App = () => {
 
   const refreshList = (value) => {
     axios
-      .get("http://54.145.156.87:5000/anagram?stem="+value)
+      .get("http://54.90.60.161:5000/anagram?stem="+value)
       .then(res => setAnagrams(res.data))
       .catch(err => console.log(err));
   };
